@@ -1,14 +1,14 @@
 ---
-name: swapcard-scraper
-description: "Guide the user through scraping a Swapcard event attendee list using the swapcard-scraper Node.js tool — login, auto-scroll, API intercept, Excel export, and coverage validation."
-trigger: /swapcard-scraper
+name: attendee-harvester
+description: "Guide the user through scraping a Swapcard event attendee list using the attendee-harvester Node.js tool — login, auto-scroll, API intercept, Excel export, and coverage validation."
+trigger: /attendee-harvester
 risk: low
 source: local
 ---
 
-# /swapcard-scraper
+# /attendee-harvester
 
-Guided workflow for extracting a full Swapcard event attendee list into Excel using the `swapcard-scraper` Node.js tool. The tool auto-scrolls the People page, intercepts Swapcard's internal API responses, and writes a deduplicated `.xlsx` file. Claude orchestrates each step and handles interruptions.
+Guided workflow for extracting a full Swapcard event attendee list into Excel using the `attendee-harvester` Node.js tool. The tool auto-scrolls the People page, intercepts Swapcard's internal API responses, and writes a deduplicated `.xlsx` file. Claude orchestrates each step and handles interruptions.
 
 ## When to Use
 
@@ -27,8 +27,8 @@ Do not trigger for non-Swapcard platforms (use a different scraping skill) or if
 The repo must be cloned locally before starting. If the user has not done this yet, tell them:
 
 ```bash
-git clone https://github.com/<your-org>/swapcard-scraper.git
-cd swapcard-scraper
+git clone https://github.com/arpitjaiswal-0701/attendee-harvester.git
+cd attendee-harvester
 ```
 
 All `npm run` commands below are executed from inside that cloned directory.
@@ -162,7 +162,7 @@ Claude must always:
 - **Explain the live counter.** During `npm run scrape`, the terminal shows a running count of intercepted profiles. Reassure the user this is normal and the tool is working.
 - **Warn about privacy opt-outs.** Some Swapcard attendees opt out of being visible in the People directory. The Excel output reflects only publicly visible attendees. Coverage below 100% may partly reflect opt-outs, not a tool failure.
 - **Keep `swapcard.config.json` out of version control.** If the user mentions pushing the repo to GitHub, remind them to add `swapcard.config.json` and `browser-profile/` to `.gitignore`.
-- **Run commands from the repo root.** All `npm run` commands must be executed from inside the cloned `swapcard-scraper` directory.
+- **Run commands from the repo root.** All `npm run` commands must be executed from inside the cloned `attendee-harvester` directory.
 
 ---
 

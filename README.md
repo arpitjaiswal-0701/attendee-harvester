@@ -1,4 +1,4 @@
-# swapcard-scraper
+# attendee-harvester
 
 Generic Swapcard event attendee scraper — API interception, auto-scroll, resume, validation, and Excel export.
 
@@ -15,8 +15,8 @@ Captures the full attendee list from any Swapcard-hosted event by intercepting t
 ## Quick Start
 
 ```bash
-git clone https://github.com/arpitjaiswal-0701/swapcard-scraper.git
-cd swapcard-scraper
+git clone https://github.com/arpitjaiswal-0701/attendee-harvester.git
+cd attendee-harvester
 npm run setup
 ```
 
@@ -106,7 +106,7 @@ Gap ≤ 50 = complete. Gap > 500 = more scrolling needed.
 
 ## Claude Code Skill
 
-This repo ships with a `SKILL.md` that can be installed as a Claude Code skill for guided invocation via `/swapcard-scraper`. See [SKILL.md](SKILL.md) for the workflow.
+This repo ships with a `SKILL.md` that can be installed as a Claude Code skill for guided invocation via `/attendee-harvester`. See [SKILL.md](SKILL.md) for the workflow.
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "name": "swapcard-scraper",
+  "name": "attendee-harvester",
   "version": "1.0.0",
   "description": "Generic Swapcard event attendee scraper — API interception, auto-scroll, resume, validation, Excel export.",
   "scripts": {
