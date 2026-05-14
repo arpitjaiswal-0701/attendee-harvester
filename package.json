@@ -1,0 +1,16 @@
+{
+  "name": "swapcard-scraper",
+  "version": "1.0.0",
+  "description": "Generic Swapcard event attendee scraper — API interception, auto-scroll, resume, validation, Excel export.",
+  "scripts": {
+    "setup": "npm install && npx playwright install chromium",
+    "login": "node scripts/login.js",
+    "scrape": "node scripts/scrape.js",
+    "resume": "node scripts/scrape-resume.js",
+    "validate": "node scripts/validate.js"
+  },
+  "dependencies": {
+    "playwright": "^1.44.0",
+    "xlsx": "^0.18.5"
+  }
+}

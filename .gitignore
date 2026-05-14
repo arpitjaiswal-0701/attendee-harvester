@@ -1,0 +1,5 @@
+node_modules/
+swapcard.config.json
+*-browser-profile/
+*.xlsx
+.DS_Store
