@@ -1,6 +1,6 @@
 {
-  "eventUrl": "https://atdconferences.app.swapcard.com/event/YOUR-EVENT-SLUG/people/YOUR-VIEW-ID",
-  "eventName": "ATD 2026",
+  "eventUrl": "https://YOUR-SUBDOMAIN.app.swapcard.com/event/YOUR-EVENT-SLUG/people/YOUR-VIEW-ID",
+  "eventName": "My Conference 2026",
   "outputDir": "C:\\Users\\YourName\\Desktop",
-  "profileDir": "C:\\Users\\YourName\\Desktop\\swapcard-browser-profile"
+  "profileDir": "C:\\Users\\YourName\\Desktop\\browser-profile"
 }
