@@ -108,6 +108,18 @@ Gap ≤ 50 = complete. Gap > 500 = more scrolling needed.
 
 This repo ships with a `SKILL.md` that can be installed as a Claude Code skill for guided invocation via `/attendee-harvester`. See [SKILL.md](SKILL.md) for the workflow.
 
-## License
+## License & responsible use
 
-MIT
+MIT (see `LICENSE`).
+
+Not affiliated with, endorsed by, or supported by Swapcard. Attendee records are **personal
+data** — name, job title, employer. Before you harvest or store them you are responsible for:
+
+- the event's and Swapcard's **Terms of Service** and your registration agreement;
+- applicable privacy law (**GDPR / CCPA** and local equivalents) — you need a lawful basis to
+  collect and a defined purpose, retention, and deletion path;
+- honoring directory **opt-outs** (opted-out attendees never appear — do not route around that);
+- **not** using the output for spam, unsolicited bulk outreach, resale, or list-building.
+
+Use it for legitimate first-party research on events you're entitled to access. No warranty,
+no SLA; a published snapshot, not a maintained product.

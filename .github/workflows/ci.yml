@@ -1,0 +1,16 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: syntax-check all JS
+        run: |
+          shopt -s globstar nullglob
+          for f in **/*.js **/*.mjs; do
+            case "$f" in node_modules/*) continue;; esac
+            node --check "$f"
+          done
